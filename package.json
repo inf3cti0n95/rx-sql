@@ -1,0 +1,40 @@
+{
+  "name": "rx-sql",
+  "version": "0.0.1",
+  "description": "RxJS Implementation of MySQL",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "keywords": [
+    "mysql",
+    "rxjs",
+    "database",
+    "rx-sql",
+    "reactive"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inf3cti0n95/rx-sql.git"
+  },
+  "author": "Viraj Trivedi <inf3cti0n95@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/mysql": "^0.0.34",
+    "@types/node": "^8.0.8",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "mysql": "^2.13.0",
+    "rxjs": "^5.4.2",
+    "typed-promisify": "^0.4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/inf3cti0n95/rx-sql/issues"
+  },
+  "homepage": "https://github.com/inf3cti0n95/rx-sql#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
