@@ -12,7 +12,9 @@ export class RxSQL {
                 this.connection.query(query,(error, result, fields) => {
                         if(error)
                             observer.error(error)
-                        observer.next(result)
+                        else
+                            observer.next(result)
+                        observer.complete();
                 })
         })
     }
