@@ -7,8 +7,8 @@ export class RxSQL {
         this.connection =  connectionParam;      
     }
 
-    public query(query: string): Observable<Array<any>>{
-        return Observable.create((observer: Observer<any>) => {
+    public query<T>(query: string): Observable<T>{
+        return Observable.create((observer: Observer<T>) => {
                 this.connection.query(query,(error, result, fields) => {
                         if(error)
                             observer.error(error)
