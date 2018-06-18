@@ -1,6 +1,6 @@
 {
   "name": "rx-sql",
-  "version": "0.0.3",
+  "version": "0.0.0-development",
   "description": "RxJS Implementation of MySQL",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -16,25 +16,48 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/inf3cti0n95/rx-sql.git"
+    "url": "https://github.com/inf3cti0n95/rx-sql.git"
   },
   "author": "Viraj Trivedi <inf3cti0n95@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "@types/mysql": "^0.0.34",
-    "@types/node": "^8.0.8",
-    "typescript": "^2.4.1"
-  },
   "dependencies": {
-    "mysql": "^2.13.0",
-    "rxjs": "^5.4.2",
-    "typed-promisify": "^0.4.0"
+    "rxjs": "^6.2.1"
   },
   "bugs": {
     "url": "https://github.com/inf3cti0n95/rx-sql/issues"
   },
   "homepage": "https://github.com/inf3cti0n95/rx-sql#readme",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "travis-deploy-once": "travis-deploy-once",
+    "semantic-release": "semantic-release"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.0",
+    "@types/mysql": "^2.15.5",
+    "@types/node": "^10.3.3",
+    "jest": "^23.1.0",
+    "semantic-release": "^15.5.5",
+    "travis-deploy-once": "^5.0.0",
+    "ts-jest": "^22.4.6",
+    "typescript": "^2.9.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsConfigFile": "tsconfig.json"
+      }
+    },
+    "testMatch": [
+      "**/__tests__/*.+(ts|tsx|js)"
+    ]
   }
 }
