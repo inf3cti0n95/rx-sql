@@ -7,7 +7,7 @@ RxJS Implementation of MySQL
 ```js
 import { RxSQL } from "rx-sql";
 import { createConnection } from "mysql";
-import { flatMap } = require("rxjs/operators");
+import { flatMap } from "rxjs/operators";
 
 let db = createConnection({
   host: "localhost",
